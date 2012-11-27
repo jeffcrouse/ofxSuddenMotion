@@ -1,13 +1,27 @@
-# Compiled Object files
-*.slo
-*.lo
+build/
+obj/
+bin/
 *.o
+*.app/
+*.DS_Store
+/Dev
+*.svn
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
+#XCode 
+*.xcscheme
+*.xcsettings
+*.xcworkspacedata
+*.xcworkspace
+*.xcuserdatad
+*.mode1v3
+*.pbxuser
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+
+
+#Other
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.app

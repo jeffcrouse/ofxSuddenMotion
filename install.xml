@@ -1,0 +1,51 @@
+<install>
+	<author>theo watson</author>
+	<version>0.01</version>
+
+	
+	<!-- ========================================================================= 	-->
+	<!--	setting for the "installation" of OF 					-->
+	<!-- ========================================================================= 	-->
+	
+	
+	<toAddAddonsH>
+
+//-------------------------------------------- sudden motion
+#ifdef OF_ADDON_USING_OFXSUDDENMOTION
+	#include "ofxSuddenMotion.h"
+#endif
+
+	</toAddAddonsH>
+	
+	
+	
+	<!-- ========================================================================= 	-->
+	<!--	setting per project 							-->
+	<!-- ========================================================================= 	-->
+	
+	<toAddPerProject>
+	
+		<folder name="addons/ofxSuddenMotion/src">
+			<src>../../../addons/ofxSuddenMotion/src/ofxSuddenMotion.cpp</src>
+			<src>../../../addons/ofxSuddenMotion/src/ofxSuddenMotion.h</src>
+		</folder>
+		
+		<folder name="addons/ofxSuddenMotion/libs">
+			<src>../../../addons/ofxSuddenMotion/libs/unimotion.c</src>
+			<src>../../../addons/ofxSuddenMotion/libs/unimotion.h</src>
+		</folder>
+	
+	</toAddPerProject>
+	
+	<includePath>
+		<path>../../../addons/ofxSuddenMotion/src</path>
+		<path>../../../addons/ofxSuddenMotion/libs</path>
+	</includePath>
+				
+	<!-- ========================================================================= 	-->
+	<!--	any requirements?							-->
+	<!-- ========================================================================= 	-->
+	
+	<requires></requires>
+	
+</install>
